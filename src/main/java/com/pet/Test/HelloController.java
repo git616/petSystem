@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @PostMapping("name")
     public String hello(@RequestBody(required = false) User user){
+        System.out.println("mmmmmmmmmmm");
         return user.getName();
     }
 }
