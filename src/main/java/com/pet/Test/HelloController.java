@@ -12,6 +12,7 @@ public class HelloController {
     @PostMapping("name")
     public String hello(@RequestBody(required = false) User user){
         System.out.println("qqqqqqqqqqqqqq");
+        System.out.println("mmmmmmmmmmm");
         return user.getName();
     }
 }
